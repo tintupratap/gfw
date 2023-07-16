@@ -97,4 +97,4 @@ with open('gfwlist.txt', 'w') as file:
     file.write('\n'.join(gfwlist_base64_chunks))
 
 
-print(" Your gfwlist.txt created.. Import the gfwlist.txt in shadowsocks.. \n Optionally check original_gwflist.txt and gwflist.txt\n The sites you can't access are listed in updated_gwflist.txt\n\n enjoy.. :)")
+print(" Your gfwlist.txt created..\n Host this somewhere and import in shadowsocks(you can even add the raw file path from github in shadowsocks, no hosting needed).. \n Optionally check original_gwflist.txt and gwflist.txt\n The sites you can't access are listed in updated_gwflist.txt\n\n enjoy.. :)")
