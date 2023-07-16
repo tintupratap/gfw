@@ -15,7 +15,7 @@ def check_website_accessibility(url):
         response = requests.get(url, timeout=10)
         return response.status_code == 200
     except requests.exceptions.RequestException:
-        print("Blocked: " + url)
+        print("Blocked site detected: " + url)
         return False
 
 # Retrieve the gfwlist.txt file
