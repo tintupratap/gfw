@@ -15,20 +15,20 @@ def check_website_accessibility(url):
         response = requests.get(url, timeout=10)
         return response.status_code == 200
     except requests.exceptions.RequestException:
-        print("Blocked site detected: " + url)
+        print("Blocked site detected, adding to gfwlist: " + url)
         return False
 
 # Retrieve the gfwlist.txt file
 # You can uncomment the urls for retriving full gfwlist or tinylist.. 
 # Tiny gwflist (recommended)
 
-url = 'https://cdn.jsdelivr.net/gh/gfwlist/tinylist/tinylist.txt'
+#url = 'https://cdn.jsdelivr.net/gh/gfwlist/tinylist/tinylist.txt'
 
 
 # Full gfwlist (not recommended but if you want full freedom, you can..)
 #[Warning] It may take a long time, maybe an hour or maybe a day depending on your connection..]
 
-#url = 'https://cdn.jsdelivr.net/gh/gfwlist/gfwlist/gfwlist.txt'
+url = 'https://cdn.jsdelivr.net/gh/gfwlist/gfwlist/gfwlist.txt'
 
 
 
