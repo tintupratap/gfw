@@ -6,8 +6,6 @@ Created on Sun Jul 16 13:47:30 2023
 @author: tintu
 """
 
-
-
 import requests
 import base64
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -97,3 +95,6 @@ gfwlist_base64_chunks = [gfwlist_base64[i:i+64] for i in range(0, len(gfwlist_ba
 
 with open('gfwlist.txt', 'w') as file:
     file.write('\n'.join(gfwlist_base64_chunks))
+
+
+print(" Your gfwlist.txt created.. Import the gfwlist.txt in shadowsocks.. \n Optionally check original_gwflist.txt and gwflist.txt\n The sites you can't access are listed in updated_gwflist.txt\n\n enjoy.. :)")
